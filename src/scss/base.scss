@@ -1,1 +1,26 @@
-@layer base {}
+@layer base {
+    section {
+        max-width: 100%;
+        margin: auto;
+
+        @screen sm {
+            max-width: 540px;
+        }
+
+        @screen md {
+            max-width: 720px;
+        }
+
+        @screen lg {
+            max-width: 960px;
+        }
+
+        @screen xl {
+            max-width: 1140px;
+        }
+
+        @screen xxl {
+            max-width: 1320px;
+        }
+    }
+}

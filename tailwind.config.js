@@ -18,7 +18,8 @@ export default {
       /** Define Custom Colors */
       colors: {
         darkTheme: '#292B32',
-        lightTheme: '#F7F7F8'
+        lightTheme: '#F7F7F8',
+        alt: "#738FFF",
       },
       /** Define Custom Font Family */
       fontFamily: {
