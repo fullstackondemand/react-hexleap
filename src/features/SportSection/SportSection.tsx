@@ -1,3 +1,5 @@
+import { PlayerCard } from "../../shared";
+
 export default function SportSection() {
     return (
         <section className="sportSection">
@@ -9,8 +11,13 @@ export default function SportSection() {
                 </div>
 
                 <div className="flex gap-3">
+                    <PlayerCard />
+                    <PlayerCard />
+                    <PlayerCard />
+                    <PlayerCard />
+                    <PlayerCard />
                 </div>
-                
+
             </div>
         </section>
     )

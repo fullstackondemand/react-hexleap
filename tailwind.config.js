@@ -20,6 +20,9 @@ export default {
         darkTheme: '#292B32',
         lightTheme: '#F7F7F8',
         alt: "#738FFF",
+        alt1: "#525965",
+        alt2: "#3B3E47",
+        alt3: "#DFDFDF"
       },
       /** Define Custom Font Family */
       fontFamily: {
