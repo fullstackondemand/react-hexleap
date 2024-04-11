@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx}", "./*.html"],
   experimental: {
     optimizeUniversalDefaults: true,
   },
@@ -15,6 +15,11 @@ export default {
       xxl: '1400px',
     },
     extend: {
+      /** Define Custom Colors */
+      colors: {
+        darkTheme: '#292B32',
+        lightTheme: '#F7F7F8'
+      },
       /** Define Custom Font Family */
       fontFamily: {
         inherit: 'inherit',
@@ -28,7 +33,7 @@ export default {
       /** Define Custom Line Height */
       lineHeight: {
         inherit: 'inherit'
-      },
+      }
     },
   },
   corePlugins: {
