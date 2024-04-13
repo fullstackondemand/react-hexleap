@@ -2,25 +2,6 @@
     section {
         max-width: 100%;
         margin: auto;
-
-        @screen sm {
-            max-width: 540px;
-        }
-
-        @screen md {
-            max-width: 720px;
-        }
-
-        @screen lg {
-            max-width: 960px;
-        }
-
-        @screen xl {
-            max-width: 1140px;
-        }
-
-        @screen xxl {
-            max-width: 1320px;
-        }
+        @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xxl:max-w-[1320px];
     }
 }

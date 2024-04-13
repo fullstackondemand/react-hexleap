@@ -1,1 +1,12 @@
-@layer components {}
+@layer components {
+    .ads {
+        position: relative;
+
+        &::after {
+            content: 'Ad';
+            @apply h-[25px] w-[48px] bg-black text-white text-[13px] leading-[19px] font-bold font-alt;
+            @apply flex justify-center items-center absolute top-0 right-0;
+        }
+
+    }
+}

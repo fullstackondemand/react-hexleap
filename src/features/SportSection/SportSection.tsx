@@ -1,4 +1,4 @@
-import { PlayerCard } from "../../shared";
+import { AdsCard, PlayerCard } from "../../shared";
 
 export default function SportSection() {
     return (
@@ -15,7 +15,7 @@ export default function SportSection() {
                     <PlayerCard />
                     <PlayerCard />
                     <PlayerCard />
-                    <PlayerCard />
+                    <AdsCard />
                 </div>
 
             </div>
