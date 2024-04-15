@@ -18,6 +18,10 @@ export default function SportSection() {
                     <AdsCard />
                 </div>
 
+                <div className="mt-12 pb-9">
+                    <a href="#" className="shadow-card btn-primary mx-auto">See More</a>
+                </div>
+
             </div>
         </section>
     )
