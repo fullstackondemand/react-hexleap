@@ -1,16 +1,17 @@
 import { AdsCard, PlayerCard } from "../../shared";
+import { Swiper } from "../Swiper";
 
 export default function SportSection() {
     return (
         <section className="sportSection">
-            <div className="py-5 px-3 mx-auto lg:my-5">
+            <div className="py-5 px-3 mx-auto lg:my-5 p-3">
 
-                <div className="mb-[50px]">
+                <div className="mb-6 lg:mb-8">
                     <h3 className="text-black font-default text-bold text-[24px] leading-[36px] my-0 dark:text-white">Sports</h3>
                     <hr className="w-[80px] h-[2px] bg-alt ml-0 border-0" />
                 </div>
 
-                <div className="flex gap-3">
+                <div className="gap-3 hidden lg:flex">
                     <PlayerCard />
                     <PlayerCard />
                     <PlayerCard />
@@ -18,7 +19,41 @@ export default function SportSection() {
                     <AdsCard />
                 </div>
 
-                <div className="mt-12 pb-9">
+                <Swiper.Slider className="lg:hidden -mx-3" name="sport" autoplay spaceBetween={30} slidesPerView={1}
+                    breakpoints={{
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        }
+                    }}>
+                    <Swiper.Slide>
+                        <div className="p-3 flex justify-center">
+                            <PlayerCard />
+                        </div>
+                    </Swiper.Slide>
+
+                    <Swiper.Slide>
+                        <div className="p-3 flex justify-center">
+                            <PlayerCard />
+                        </div>
+                    </Swiper.Slide>
+
+                    <Swiper.Slide>
+                        <div className="p-3 flex justify-center">
+                            <PlayerCard />
+                        </div>
+                    </Swiper.Slide>
+
+                    <Swiper.Slide>
+                        <div className="p-3 flex justify-center">
+                            <PlayerCard />
+                        </div>
+                    </Swiper.Slide>
+
+                    <Swiper.Pagination className="sport" />
+                </Swiper.Slider>
+
+                <div className="mt-6 lg:mt-12 pb-9">
                     <a href="#" className="shadow-card btn-primary mx-auto">See More</a>
                 </div>
 

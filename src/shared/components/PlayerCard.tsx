@@ -1,6 +1,6 @@
 export default function PlayerCard() {
     return (
-        <div className="shadow-card dark:bg-alt2 bg-white p-[10px] w-100">
+        <div className="shadow-card dark:bg-alt2 bg-white p-[10px] inline-block w-100">
             <img src="/assets/card-one.jpg" className="object-center object-cover w-100" alt="Sacramento River Cats" height="385" width="218" />
             <h3 className="my-3 dark:text-white text-black font-alt font-medium text-[17px] leading-[21px]">Sacramento River Cats</h3>
             <div className="px-3 dark:bg-darkTheme bg-lightTheme rounded-[2px] flex">
