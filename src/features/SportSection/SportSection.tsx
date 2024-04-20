@@ -1,5 +1,5 @@
+import { ReactSwiper } from "@creativeworlds/react-swiper";
 import { AdsCard, PlayerCard } from "../../shared";
-import { Swiper } from "../Swiper";
 
 export default function SportSection() {
     return (
@@ -19,39 +19,39 @@ export default function SportSection() {
                     <AdsCard />
                 </div>
 
-                <Swiper.Slider className="lg:hidden -mx-3" name="sport" autoplay spaceBetween={30} slidesPerView={1}
+                <ReactSwiper.Slider className="lg:hidden -mx-3" name="sport" autoplay spaceBetween={30} slidesPerView={1}
                     breakpoints={{
                         768: {
                             slidesPerView: 2,
                             spaceBetween: 30,
                         }
                     }}>
-                    <Swiper.Slide>
+                    <ReactSwiper.Slide>
                         <div className="p-3 flex justify-center">
                             <PlayerCard />
                         </div>
-                    </Swiper.Slide>
+                    </ReactSwiper.Slide>
 
-                    <Swiper.Slide>
+                    <ReactSwiper.Slide>
                         <div className="p-3 flex justify-center">
                             <PlayerCard />
                         </div>
-                    </Swiper.Slide>
+                    </ReactSwiper.Slide>
 
-                    <Swiper.Slide>
+                    <ReactSwiper.Slide>
                         <div className="p-3 flex justify-center">
                             <PlayerCard />
                         </div>
-                    </Swiper.Slide>
+                    </ReactSwiper.Slide>
 
-                    <Swiper.Slide>
+                    <ReactSwiper.Slide>
                         <div className="p-3 flex justify-center">
                             <PlayerCard />
                         </div>
-                    </Swiper.Slide>
+                    </ReactSwiper.Slide>
 
-                    <Swiper.Pagination className="sport" />
-                </Swiper.Slider>
+                    <ReactSwiper.Pagination className="sport" />
+                </ReactSwiper.Slider>
 
                 <div className="mt-6 lg:mt-12 pb-9">
                     <a href="#" className="shadow-card btn-primary mx-auto">See More</a>
