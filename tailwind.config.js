@@ -25,7 +25,11 @@ export default {
         alt3: "#DFDFDF",
         alt4: "#006555",
         alt5: "#222D3A",
-        alt6: "#2C9CF0"
+        alt6: "#2C9CF0",
+        alt7: "#A9ACB2",
+        alt8: "#D9D9D9",
+        alt9: "#1D1D1F",
+        alt10: "#818A97",
       },
       /** Define Custom Font Family */
       fontFamily: {

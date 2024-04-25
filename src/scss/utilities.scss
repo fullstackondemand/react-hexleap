@@ -14,4 +14,16 @@
     .border-alt4-0_2 {
         border: 0.2px solid theme('colors.alt4');
     }
+
+    .gradient-light-bg {
+        background: linear-gradient(180deg, #F9F8FF 0%, #F3F9FF 100%);
+    }
+
+    .gradient-dark-bg {
+        background: linear-gradient(180deg, #18282A 0%, #221A2C 100%);
+    }
+
+    .shadow-ticket-img {
+        box-shadow: 0px 8px 16px 0px #00000033;
+    }
 }

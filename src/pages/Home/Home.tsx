@@ -1,8 +1,11 @@
-import { SportSection } from "../../features";
+import { SportSection, TicketSection } from "../../features";
 
 export default function Home() {
 
     return (
-        <SportSection />
+        <>
+            <SportSection />
+            <TicketSection />
+        </>
     )
 }
