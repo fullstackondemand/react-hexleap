@@ -1,14 +1,19 @@
 import { ReactSwiper } from "@creativeworlds/react-swiper";
 import { AdsCard, PlayerCard } from "../../shared";
+import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
 export default function SportSection() {
     return (
         <section className="sportSection">
             <div className="py-5 px-3 mx-auto lg:my-5 p-3">
 
-                <div className="mb-6 lg:mb-8">
-                    <h3 className="text-black font-default text-bold text-[24px] leading-[36px] my-0 dark:text-white">Sports</h3>
-                    <hr className="w-[80px] h-[2px] bg-alt ml-0 border-0" />
+                <div className="flex gap-[30px] items-center mb-6 lg:mb-8">
+                    <div className="inline-block w-full">
+                        <h3 className="text-black font-default text-bold text-[24px] leading-[36px] my-0 dark:text-white">Sports</h3>
+                        <hr className="w-[80px] h-[2px] bg-alt ml-0 border-0" />
+                    </div>
+
+                    <ThemeSwitcher />
                 </div>
 
                 <div className="gap-3 hidden lg:flex">
