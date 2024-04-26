@@ -1,0 +1,42 @@
+[
+    {
+        "_id": 1,
+        "img": "ticket-one.jpg",
+        "date": "Oct 15",
+        "weekend": "Sun",
+        "time": "4:30 PM",
+        "name": "Las Vegas Aviators",
+        "about": "Las Vegas Ballpark, Las Vegas, Nevada",
+        "button_text": "Take Flight Collection"
+    },
+    {
+        "_id": 2,
+        "img": "ticket-two.jpg",
+        "date": "Oct 15",
+        "weekend": "Sun",
+        "time": "4:30 PM",
+        "name": "Sacramento River Cats",
+        "about": "Sutter Health Park, Sacramento, California",
+        "button_text": "Orange Collection"
+    },
+    {
+        "_id": 3,
+        "img": "ticket-three.jpg",
+        "date": "Oct 15",
+        "weekend": "Sun",
+        "time": "4:30 PM",
+        "name": "Las Vegas Aviators",
+        "about": "Las Vegas Ballpark, Las Vegas, Nevada",
+        "button_text": "Take Flight Collection"
+    },
+    {
+        "_id": 4,
+        "img": "ticket-two.jpg",
+        "date": "Oct 15",
+        "weekend": "Sun",
+        "time": "4:30 PM",
+        "name": "Sacramento River Cats",
+        "about": "Sutter Health Park, Sacramento, California",
+        "button_text": "Orange Collection"
+    }
+]

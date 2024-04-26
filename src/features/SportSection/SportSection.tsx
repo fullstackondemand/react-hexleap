@@ -1,8 +1,10 @@
 import { ReactSwiper } from "@creativeworlds/react-swiper";
 import { AdsCard, PlayerCard } from "../../shared";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
+import SportCard from "./sport-card.json";
 
 export default function SportSection() {
+
     return (
         <section className="sportSection">
             <div className="py-5 px-3 mx-auto lg:my-5 p-3">
@@ -17,10 +19,9 @@ export default function SportSection() {
                 </div>
 
                 <div className="gap-3 hidden lg:flex">
-                    <PlayerCard />
-                    <PlayerCard />
-                    <PlayerCard />
-                    <PlayerCard />
+                    {SportCard.map(sport =>
+                        <PlayerCard {...sport} key={sport._id} />
+                    )}
                     <AdsCard />
                 </div>
 
@@ -31,29 +32,14 @@ export default function SportSection() {
                             spaceBetween: 30,
                         }
                     }}>
-                    <ReactSwiper.Slide>
-                        <div className="p-3 flex justify-center">
-                            <PlayerCard />
-                        </div>
-                    </ReactSwiper.Slide>
 
-                    <ReactSwiper.Slide>
-                        <div className="p-3 flex justify-center">
-                            <PlayerCard />
-                        </div>
-                    </ReactSwiper.Slide>
-
-                    <ReactSwiper.Slide>
-                        <div className="p-3 flex justify-center">
-                            <PlayerCard />
-                        </div>
-                    </ReactSwiper.Slide>
-
-                    <ReactSwiper.Slide>
-                        <div className="p-3 flex justify-center">
-                            <PlayerCard />
-                        </div>
-                    </ReactSwiper.Slide>
+                    {SportCard.map(sport =>
+                        <ReactSwiper.Slide key={sport._id}>
+                            <div className="p-3 flex justify-center">
+                                <PlayerCard {...sport} />
+                            </div>
+                        </ReactSwiper.Slide>
+                    )}
 
                     <ReactSwiper.Pagination className="sport" />
                 </ReactSwiper.Slider>

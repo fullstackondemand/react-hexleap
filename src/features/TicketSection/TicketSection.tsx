@@ -1,5 +1,6 @@
 import { ReactSwiper } from "@creativeworlds/react-swiper";
 import { PlayerTicket } from "../../shared";
+import TicketCard from "./ticket-card.json";
 
 export default function TicketSection() {
     return (
@@ -20,29 +21,14 @@ export default function TicketSection() {
                             spaceBetween: 30,
                         }
                     }}>
-                    <ReactSwiper.Slide>
-                        <div className="p-3 flex justify-center">
-                            <PlayerTicket />
-                        </div>
-                    </ReactSwiper.Slide>
 
-                    <ReactSwiper.Slide>
-                        <div className="p-3 flex justify-center">
-                            <PlayerTicket />
-                        </div>
-                    </ReactSwiper.Slide>
-
-                    <ReactSwiper.Slide>
-                        <div className="p-3 flex justify-center">
-                            <PlayerTicket />
-                        </div>
-                    </ReactSwiper.Slide>
-
-                    <ReactSwiper.Slide>
-                        <div className="p-3 flex justify-center">
-                            <PlayerTicket />
-                        </div>
-                    </ReactSwiper.Slide>
+                    {TicketCard.map(ticket =>
+                        <ReactSwiper.Slide key={ticket._id}>
+                            <div className="p-3 flex justify-center">
+                                <PlayerTicket {...ticket} />
+                            </div>
+                        </ReactSwiper.Slide>
+                    )}
 
                     <ReactSwiper.Next className="ticket-swiper hidden lg:flex h-[49px] w-[37px] justify-center items-center border-alt6 border border-solid">
                         <img src="/assets/svgs/chevron-right.svg" className="inline-block" width="11" height="19" />
