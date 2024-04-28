@@ -1,14 +1,17 @@
 # React + Hexleap
 
 ### Folder Structure
-- **public**
-    - **asstes**
-    - react.svg
-- **src**
-    - **features**
-    - **shared**
-    - **pages**
-    - **lib**
-    - **scss**
-    - App.tsx
-    
+
+```code
+├── public
+│   ├── asstes              # Static assets (js, css, fonts, images, video )
+│   └── react.svg           # Default favicon
+├── src
+│   ├── pages               # Page components
+│   ├── features            # Features components
+│   ├── shared              # Shared components (it's use multiple feature components)
+│   ├── lib                 # Library components (it's use multiple shared components)
+│   ├── scss                # Style Files (scss and css)
+│   └── App.tsx             # App component
+└── README.md
+```
