@@ -1,10 +1,12 @@
+import { Ads } from "./Ads";
+
 export default function AdsCard() {
     return (
         <div className="shadow-card dark:bg-alt2 bg-white p-[10px] w-100">
 
             <div className="border-alt4-0_2 h-100">
                 <div className="ads">
-                    <img src="/assets/ad.jpg" className="object-center object-cover w-100" alt="Dick Ads" height="218" width="218" />
+                    <img src={Ads} className="object-center object-cover w-100" alt="Dick Ads" height="218" width="218" />
                 </div>
 
                 <div className="pt-3 px-3">
