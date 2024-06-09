@@ -19,6 +19,10 @@ export default function ThemeSwitcher() {
         };
     }, [windowQuery, darkModeChange]);
 
+    useEffect(() => {
+        windowQuery.matches ? setTheme('dark') : setTheme('light');
+    }, []);
+
     // ThemeSwitcher 
     useEffect(() => {
         const html = document.querySelector('html');
